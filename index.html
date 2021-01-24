@@ -37,7 +37,11 @@
             </div>
         </section>
         <section id="transaction">
-            <h2>transações</h2>
+
+            <div class="buttonAddTransaction">
+                <a onclick="modal.open()" >adicionar nova transação</a>
+            </div>
+            
             
             <table id="data_table">
                 <h2>Transações</h2>
@@ -46,6 +50,7 @@
                         <th> Descrição </th>
                         <th> Valor </th>
                         <th> Data </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,46 +58,120 @@
                         <td>Luz</td>
                         <td>-R$ 190,00 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="">
+                                #
+                            </a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Contabilidade</td>
                         <td>-R$ 150,00 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="">
+                                #
+                            </a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Escritório</td>
                         <td>-R$ 79,60 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="">
+                                #
+                            </a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>faculdade</td>
                         <td>-R$ 190,00 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="">
+                                #
+                            </a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Aluguel</td>
                         <td>-R$ 750,00 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="">
+                                #
+                            </a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Agua</td>
                         <td>-R$ 50,00 </td>
                         <td> 15/01/2021 </td>
+                        <td>
+                            <a href="#">
+                                #
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="form">
+                <h2>Nova transação</h2>
+                <div class="form-grounp">
+                    <label class="sr-only" for="description"></label>
+                    <br>
+                    <input type="text"
+                     id="description" 
+                     name="description" 
+                     value="" 
+                     placeholder="Descrição">
+
+
+                    <br>
+
+
+                    <label for="amount"></label>
+                    <input type="number" id="amount" name="amount" placeholder="0,00"
+                    step="0.01"
+                    >
+
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio officiis maxime debitis quis atque laborum modi tempore ducimus</small>
+
+                    <label class="sr-only" for="date"></label>
+                    <br>
+                    <input type="date"
+                     id="date" 
+                     name="date" 
+                     value="" 
+                     placeholder="">
+
+                     <div class="input-group actions">
+                         <a href="#" onclick="modal.close()" class="button cancel">Cancelar</a>
+                         <button>salvar</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eum ducimus optio magni voluptatibus id!
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eum ducimus optio magni voluptatibusid!
             Deserunt obcaecati commodi repudiandae unde dolore adipisci a incidunt sapiente! Ut numquam ducimus commodi
             cumque?</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
