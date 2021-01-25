@@ -168,14 +168,19 @@ header {
 /* ================= table ====================*/
 
 .buttonAddTransaction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
     cursor: pointer;
 
     color: white;
     background: white;
     border: none;
+    opacity: 0.7;
 
     
-    padding: 0.8rem;
+    padding: 0.2rem;
     border-radius: 0.25rem;
 
     cursor: pointer;
@@ -189,6 +194,7 @@ header {
 
 .buttonAddTransaction:hover {
     background: var(--green-control);
+    opacity: 2;
 }
 
 
@@ -291,3 +297,40 @@ table tr:hover {
     width: 48%;   
 }
 
+.input-group.actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    
+    color: var(--green-control);
+    background: white;
+    opacity: 0.7;
+
+    padding: 0;
+    height: 3rem;
+
+    border-radius: 0.25rem;
+}
+
+.input-group.actions a:hover {
+    opacity: 2;
+}
+
+
+
+/* ====================FOOTER======================= */
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    width: 90vw;
+    height: 10rem;
+
+}
