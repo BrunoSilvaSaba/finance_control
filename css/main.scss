@@ -27,10 +27,15 @@
         display: flex;
         grid-template-columns: 3, 1fr;
         gap: 2rem;
-        margin-top: -4px;
-        margin-left: 135px;
+        justify-content: center;
+
+
+        margin-top: -4rem !important;
     }
 }
+
+
+/*=========================================================================*/
 
 
 
@@ -106,7 +111,7 @@ header {
 
 
 #balance {
-    margin-top: -8rem;
+    margin-top: -6rem;
     
 }
 
@@ -130,6 +135,8 @@ header {
 
     color: var(--dark-blue);
     font-family: sans-serif;
+
+    min-width: 245px;
 }
 
 .card h3 {
@@ -166,6 +173,15 @@ header {
 
 
 /* ================= table ====================*/
+
+
+.income {
+    color: var(--light-green);
+}
+
+.expense {
+    color: red;
+}
 
 .buttonAddTransaction {
     display: flex;

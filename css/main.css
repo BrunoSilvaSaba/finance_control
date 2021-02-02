@@ -11,11 +11,14 @@
     -ms-grid-columns: 3, 1fr;
         grid-template-columns: 3, 1fr;
     gap: 2rem;
-    margin-top: -4px;
-    margin-left: 135px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -4rem !important;
   }
 }
 
+/*=========================================================================*/
 :root {
   --dark-blue: #363f5f;
   --green-control: #49aa26;
@@ -74,7 +77,7 @@ header {
 }
 
 #balance {
-  margin-top: -8rem;
+  margin-top: -6rem;
 }
 
 #balance h2 {
@@ -100,6 +103,7 @@ header {
   margin-bottom: 2rem;
   color: var(--dark-blue);
   font-family: sans-serif;
+  min-width: 245px;
 }
 
 .card h3 {
@@ -134,6 +138,14 @@ header {
 }
 
 /* ================= table ====================*/
+.income {
+  color: var(--light-green);
+}
+
+.expense {
+  color: red;
+}
+
 .buttonAddTransaction {
   display: -webkit-box;
   display: -ms-flexbox;
